@@ -1,0 +1,102 @@
+:root {
+  --navy: #1a2a6c;
+  --white: #ffffff;
+  --pale-yellow: #fdfae1;
+  --light-gray: #f4f7f6;
+  --text-dark: #333333;
+  --accent-yellow: #f1c40f;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--light-gray);
+  color: var(--text-dark);
+}
+
+/* Container for all pages */
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Professional Cards */
+.card {
+  background: var(--white);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 25px;
+  border-top: 5px solid var(--navy);
+}
+
+/* Typography */
+h1, h2, h3 {
+  color: var(--navy);
+  margin-top: 0;
+}
+
+/* Forms */
+form {
+  display: grid;
+  gap: 15px;
+}
+
+input, select, textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+input:focus {
+  border-color: var(--navy);
+  outline: none;
+}
+
+/* Buttons */
+button {
+  background-color: var(--navy);
+  color: var(--white);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #0d163f;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+}
+
+th {
+  background-color: var(--navy);
+  color: white;
+  text-align: left;
+  padding: 15px;
+}
+
+td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Highlight for Recommendations (Pale Yellow) */
+.recommendation-box {
+  background-color: var(--pale-yellow);
+  border-left: 4px solid var(--accent-yellow);
+  padding: 15px;
+  margin-top: 10px;
+  font-style: italic;
+  color: #555;
+}
